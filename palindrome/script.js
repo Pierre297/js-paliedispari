@@ -5,10 +5,12 @@
 // chiedi una parola
 const userWord = prompt("Inserisci una parola Palindroma.");
 
+// associa la parola scelta alla variabile risultato
 let risultato = palindrome(userWord)
 
 // funzione
 function palindrome(string){
+    // confronta se la parola al contrario è uguale alla parola scelta
     var reversed = string.split("").reverse().join("");
     if (reversed === string) {
         console.log("Ottimo! Questa parola è Palindroma!");
